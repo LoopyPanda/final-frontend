@@ -1,0 +1,21 @@
+
+
+.box1 .box2 .box3{
+    
+    background-color: cadetblue;
+}
+.box{
+    margin:auto;
+};
+.container{
+    background-color: blue;
+}
+.cards{
+  height: 22rem;
+  
+}
+.cardsgroup{
+    width:50rem;
+    margin-left: 35rem;
+    margin-top: 3rem;
+}

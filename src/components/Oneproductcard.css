@@ -1,0 +1,48 @@
+/* .productcontainer{
+    width:20rem;
+    height:30rem;
+    border:yellow;
+} */
+/* .oneproduct{
+    width:40rem;
+    height:22rem;
+    border: blue;
+} */
+.bigcontainer{
+    border: white;
+}
+
+.heading{
+    text-align: center;
+    
+}
+
+   
+
+.firstpic{
+    width:22rem;
+    height:25rem;
+
+    
+}
+.secondpic{
+    width:11rem;
+    height:11rem;
+
+}
+.box{
+    height:15rem;
+    width:15rem;
+    
+}
+.button{
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+.share-container{
+    height:8rem;
+    
+
+
+}
+

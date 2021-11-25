@@ -1,0 +1,17 @@
+.footer-height{
+    height: rem;
+    padding-top:5rem;
+}
+
+ul.no-bullets{
+    list-style-type: none;
+    padding: none;
+    margin: none;
+}
+.no-bullets{
+    padding-top: 1rem;;
+}
+.icons{
+    width: 3rem;
+    height:3rem;
+}
