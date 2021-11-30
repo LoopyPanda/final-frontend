@@ -39,7 +39,7 @@ function App() {
         <Cards />
         </div>
             </Route>
-            <Route exact path='/OneProduct'>
+            <Route exact path='/OneProduct/:id'>
             <Navigation Nav="Navigation" />
               <OneProduct />
             </Route>
