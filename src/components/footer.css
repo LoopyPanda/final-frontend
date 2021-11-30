@@ -1,6 +1,7 @@
 .footer-height{
     height: rem;
     padding-top:5rem;
+    
 }
 
 ul.no-bullets{
@@ -9,9 +10,37 @@ ul.no-bullets{
     margin: none;
 }
 .no-bullets{
-    padding-top: 1rem;;
+    padding-top: 1rem;
+    
 }
 .icons{
     width: 3rem;
     height:3rem;
+    color: black;
 }
+.main-footer{
+    background-color:#FAA21A;
+}
+.black-logo{
+    background-color: black;
+}
+
+/* .button{
+    background-color: black;
+    color:#FAA21A;
+    text-align: center;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    font-family: 'Times New Roman', Times, serif; */
+
+    .cursive{
+        font-family: sofia;
+    }
+    
+    a.link{
+        color:pink;
+    }
+    a:hover{
+        color:black;
+    }

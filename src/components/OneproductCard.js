@@ -16,6 +16,10 @@ const OneProduct = (props) => {
   return (
     
     <div className="container-lg m-5 bigcontainer">
+      <h2 className="justify-items-center">
+        Choose the type of wall Art suitable for your home according to your
+        decor
+      </h2>
       
       <Breadcrumb>
   <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
@@ -26,45 +30,39 @@ const OneProduct = (props) => {
 </Breadcrumb>
       <div class="row justify-content-start ">
         <div className="col-5 ps-5 ">
-          <div>
-            <img alt="image" className="firstpic" src={Potjie} />
+          <div className='firstpic'>
+            
           </div>
         </div>
-        <div className="col-6 ">
-          <div className="text-light text-dark ">
-              <p className='text-warning'>Desert Artprint</p>
-              <p>277,00€</p>
+        <div className="col-7">
+          
+          <div className="text-light text-dark pricecontainer">
+            <div classname='desertArtprint'>
+              <p className='item ml-5'>Desert Artprint</p>
+              <p className='cursive'>277,00€</p>
             <label for="quantity">
               Quantity
-              <input type='number'></input>
-              <div className='button'>
-          <Button variant="light border-warning">Add to Cart</Button>
-          </div>
+              <input type='number'></input> <br/>
+              
+          <Button className='button' >Add to Cart</Button>
+          
+          
+          
             </label>{" "}
+            </div>
+            </div>
+            
             <br />
-            <div className='productinfo pt-5'>
+            <div className='productinfo '>
             <ul>
               {" "}
               In publishing and graphic design,
             
-              <li>
-                Lorem ipsum is a placeholder text commonly used to demonstratehygy jghfffhf
-              </li>
-              <li>
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-              </li>
-              <li>
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-              </li>
-              <li>
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-              </li>
-              <li>
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-              </li>
-              <li>
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-              </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp</li>
+            
             </ul>
             </div>
           </div>
@@ -83,15 +81,16 @@ const OneProduct = (props) => {
             <div className="border border-secondary box p-5">box 2</div>
           </div>
           
-          <div className="col-md-3 share-container border">
-            <div className=" p-5">Share with your loved ones
-           <a href="#"><FaFacebook className='icons pb-1 pt-1'/></a> 
-                           <a href="#"><FaInstagram className='icons pb-1 pt-1'/></a> </div>
+          <div className="col-md-2 share-container">
+            <div className="pt-5 mt-5 me-5 pe-5 share">Share with your loved ones 
+            <br/><a href="#" className='cursive'><FaFacebook className='icons pb-1 pt-1 dark'/>facebook</a>
+                           <a href="#" className='cursive'><FaInstagram className='icons pb-1 pt-1'/>Instagram</a> </div>
           </div>
+          
          
         </div>
       </div>
-    </div>
+    
   );
 };
 

@@ -16,11 +16,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>The Art of Abhi</h1>
-        <h2><h2 className="justify-items-center text-warning">
-        Choose the type of wall Art suitable for your home according to your
-        decor
-      </h2></h2>
+        
+        
 
         
         
@@ -29,8 +26,9 @@ function App() {
           
           <Switch>
           <Route exact path='/home'>
-          <Navigation Nav="Navigation" />
           <Home />
+          <Navigation Nav="Navigation" />
+          
             </Route>
             
             <Route exact path='/Products'>
@@ -39,7 +37,7 @@ function App() {
         <Cards />
         </div>
             </Route>
-            <Route exact path='/OneProduct'>
+            <Route exact path='/product/:id'>
             <Navigation Nav="Navigation" />
               <OneProduct />
             </Route>

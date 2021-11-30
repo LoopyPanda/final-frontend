@@ -19,3 +19,8 @@
     margin-left: 35rem;
     margin-top: 3rem;
 }
+paintingcontainers{
+    height:20rem;
+    width:10rem;
+    background-color: red;
+}
