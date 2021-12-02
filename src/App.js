@@ -28,15 +28,11 @@ function App() {
           <Route exact path='/home'>
           <Home />
           <Navigation Nav="Navigation" />
+          <Cards />
           
             </Route>
             
-            <Route exact path='/Products'>
-            <div className='products-page'>
-        <Navigation Nav="Navigation" />
-        <Cards />
-        </div>
-            </Route>
+            
             <Route exact path='/product/:id'>
             <Navigation Nav="Navigation" />
               <OneProduct />

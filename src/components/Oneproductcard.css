@@ -16,9 +16,9 @@ body{
    
 
 .firstpic{
-    width:30rem;
-    height:35rem;
-    border:solid black;
+    width:32rem;
+    height:30rem;
+   
     
 
     
@@ -29,15 +29,23 @@ body{
 
 }
 .box{
-    height:15rem;
-    width:15rem;
+    height:18rem;
+    width: 18rem;
    
     
 }
-.button{
-    padding-top: 1rem;
-    padding-left: 3rem;
+.addtocart{
+    
+    width: 11rem;
+    height:7rem;
+    padding-right: 4rem;
+    
+   
 }
+
+
+
+
 .share-container{
     height:15rem;
     width: 22rem;
@@ -49,17 +57,20 @@ body{
     color:#FAA21A;
     text-align: center;
     height: 3rem;
-    padding-left: 1rem;
     margin-top: 1rem;
     font-family: 'Times New Roman', Times, serif;
-    
-    
 }
 .item{
     color: #FAA21A;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 2rem;
+    padding-bottom: 2rem;
+    
+   
+
+    
+    
 } 
 /* li{
     list-style-type: none;
@@ -68,18 +79,53 @@ body{
 li:before{
     content: "\27A4";
 }  */
-.productinfo{
-    height:12rem;
-    width: 35rem;
-}
-.pricecontainer{
+
+/* .pricecontainer{
     
     width: 14rem;
     
 
 
-}
+} */
 .share{
     color: #FAA21A;
+}
+
+img {
+    width: 26rem;
+    height:31rem;
+}
+
+.pictures{
+    width: 12rem;
+    height:12rem;
+}
+.productinfo{
+    border:1px solid #ccc;
+    width:25rem;
+    
+    width: -moz-fit-content;
+    width:fit-content;
+}
+.firstdescription{
+    
+   width:30rem;
+}
+
+
+
+    
+
+.pricecontainer{
+    
+    width: 15rem;
+    height:18rem;
+}
+
+
+
+.nameandprice{
+    height: 3rem;
+    width: 6rem;
 }
 

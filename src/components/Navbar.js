@@ -17,10 +17,10 @@ const Navigation = () => {
       <Container className="d-flex justify-content-center">
         <Nav fill>
           <Nav.Item>
-            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="http://localhost:3000/home">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="http://localhost:3000/products">Products</Nav.Link>
+            <Nav.Link href="http://localhost:3000/product/1">Products</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="#About us">About Us</Nav.Link>
