@@ -25,7 +25,6 @@ function App() {
         
         
         <div className="All-pages">
-         
           
           <Switch>
           <Route exact path='/home'>
