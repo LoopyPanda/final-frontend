@@ -20,15 +20,6 @@ function App() {
       <div className="App">
         <div className="All-pages">
           <Switch>
-<<<<<<< HEAD
-          <Route exact path='/home'>
-          <Home />
-          <Navigation Nav="Navigation" />
-          <Cards />
-          <Grid/>
-          <Instagram/>
-          
-=======
             <Route exact path='/home'>
               <Home />
               <Navigation Nav="Navigation" />
@@ -37,7 +28,6 @@ function App() {
             <Route exact path='/products/:id'>
               <Navigation Nav="Navigation" />
               <Product />
->>>>>>> 0846800a825599f9a30c98dd0d255dacdfc9b2c3
             </Route>
             <Route exact path='/product/:id'>
               <Navigation Nav="Navigation" />
