@@ -36,18 +36,20 @@ const OneProduct = (props) => {
   return (
 
     <div className="container-lg m-5 bigcontainer">
+      <div class="container-md my-5">
       <h2 className="justify-items-center">
         Choose the type of wall Art suitable for your home according to your
         decor
       </h2>
 
       <Breadcrumb>
-        <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="http://localhost:3000/home">Home</Breadcrumb.Item>
         <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
           Artprints
         </Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Dessert</Breadcrumb.Item>
+        <Breadcrumb.Item href="http://localhost:3000/product/1">Dessert</Breadcrumb.Item>
       </Breadcrumb>
+      <div class="oneproduct ">
       <div class="row">
 
         <div className='firstpic '>
@@ -56,6 +58,7 @@ const OneProduct = (props) => {
 
             {data && <img src={`${data.pictures[0].url}`} />
             }
+          </div>
           </div>
         </div>
         <div className="col ">
@@ -112,6 +115,7 @@ const OneProduct = (props) => {
 
         </div>
       </div>
+    </div>
     </div>
 
   );
