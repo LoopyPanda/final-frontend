@@ -5,8 +5,9 @@ import "./App.css";
 import Navigation from "./components/Navbar";
 import Cards from "./components/Cards";
 import Home from "./components/home";
+import Product from "./components/Products";
 import OneProduct from "./components/OneproductCard";
-import BreadCrumbs from "./components/breadcrumbs";
+// import BreadCrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from './components/footer';
 import Grid from './components/grid'
@@ -17,15 +18,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        
-        
-
-        
-        
         <div className="All-pages">
-         
-          
           <Switch>
+<<<<<<< HEAD
           <Route exact path='/home'>
           <Home />
           <Navigation Nav="Navigation" />
@@ -33,16 +28,24 @@ function App() {
           <Grid/>
           <Instagram/>
           
+=======
+            <Route exact path='/home'>
+              <Home />
+              <Navigation Nav="Navigation" />
+              <Cards />
             </Route>
-            
-            
+            <Route exact path='/products/:id'>
+              <Navigation Nav="Navigation" />
+              <Product />
+>>>>>>> 0846800a825599f9a30c98dd0d255dacdfc9b2c3
+            </Route>
             <Route exact path='/product/:id'>
-            <Navigation Nav="Navigation" />
+              <Navigation Nav="Navigation" />
               <OneProduct />
             </Route>
           </Switch>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
