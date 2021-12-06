@@ -6,8 +6,9 @@ import "./App.css";
 import Navigation from "./components/Navbar";
 import Cards from "./components/Cards";
 import Home from "./components/home";
+import Product from "./components/Products";
 import OneProduct from "./components/OneproductCard";
-import BreadCrumbs from "./components/breadcrumbs";
+// import BreadCrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from './components/footer';
 
@@ -16,29 +17,24 @@ function App() {
   return (
     <Router>
       <div className="App">
-        
-        
-
-        
-        
         <div className="All-pages">
-          
           <Switch>
-          <Route exact path='/home'>
-          <Home />
-          <Navigation Nav="Navigation" />
-          <Cards />
-          
+            <Route exact path='/home'>
+              <Home />
+              <Navigation Nav="Navigation" />
+              <Cards />
             </Route>
-            
-            
+            <Route exact path='/products/:id'>
+              <Navigation Nav="Navigation" />
+              <Product />
+            </Route>
             <Route exact path='/product/:id'>
-            <Navigation Nav="Navigation" />
+              <Navigation Nav="Navigation" />
               <OneProduct />
             </Route>
           </Switch>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
