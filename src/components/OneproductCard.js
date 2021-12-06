@@ -36,21 +36,24 @@ const OneProduct = (props) => {
   return (
 
     <div className="container-lg m-5 bigcontainer">
+      <div class="container-md my-5">
       <h2 className="justify-items-center">
         Choose the type of wall Art suitable for your home according to your
         decor
       </h2>
       
       <Breadcrumb>
-        <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="http://localhost:3000/home">Home</Breadcrumb.Item>
         <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
           Artprints
         </Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Dessert</Breadcrumb.Item>
+        <Breadcrumb.Item href="http://localhost:3000/product/1">Dessert</Breadcrumb.Item>
       </Breadcrumb>
+      <div class="oneproduct ">
       <div class="row">
         
-          <div className='firstpic '>
+          <div className='col-5   firstpic'>
+            <div className='p-5'>
           <div className="One_product_image"> 
           {/* remember to check class */}
 
@@ -59,20 +62,26 @@ const OneProduct = (props) => {
 
             
           </div>
+          </div>
         </div>
-        <div className="col ">
+        <div className="col-6  ">
+          <div className='details-box'>
+        <div className='mg-5 py-1 me-5 '>
           
           <div className="text-light text-dark pricecontainer ">
-            <div >
+            
+            <div  >
               <p className='item ml-5'>{data && 
-                  < p className='nameandprice' > { data.name }</p>
+                  < p className='nameandprice nameofproduct' > { data.name }</p>
           }</p>
               <p className='cursive nameandprice'>277,00€</p>
               <div className='btnanquantity'>
+                <div>
             <label for="quantity">
               Quantity
               <input type='number'></input> <br/>
               </label>{" "}
+              </div>
               <div className='addtocart'>
               
           <Button className='button' >Add to Cart</Button>
@@ -95,13 +104,21 @@ const OneProduct = (props) => {
          
           </div>
         </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
       
 
-      <div className="row pt-3  ">
+      
+      
+    <div className="row  ">
         
         
 
-        <div className="row justify-content-start pt-1">
+        <div className="row justify-content-start ">
           <div className="col-md-2">
             <div className="box p-1 ">
 {data && <img className='pictures' src={`https://fathomless-depths-64916.herokuapp.com/${data.pictures[1].url}`} />
@@ -116,16 +133,15 @@ const OneProduct = (props) => {
 }</div>
           </div>
           
-          <div className="col-md-2 share-container">
+          <div className="col-md-1 share-container">
             <div className="pt-5 mt-5 me-5 pe-5 share">Share with your loved ones 
-            <br/><a href="#" className='cursive'><FaFacebook className='icons pb-1 pt-1 dark'/>facebook</a>
-                           <a href="#" className='cursive'><FaInstagram className='icons pb-1 pt-1'/>Instagram</a> </div>
+            <br/><a href="https://www.facebook.com/abish4xart" className='cursive'><FaFacebook className='icons pb-1 pt-1 dark'/>facebook</a>
+                           <a href="https://www.instagram.com/ab_4xart/" className='cursive'><FaInstagram className='icons pb-1 pt-1'/>Instagram</a> </div>
           </div>
           
          
         </div>
 
-      </div>
       </div>
       </div>
     

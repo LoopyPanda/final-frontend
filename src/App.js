@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
 // import 'Navbar.css';
 import Navigation from "./components/Navbar";
 import Cards from "./components/Cards";
@@ -10,6 +9,8 @@ import OneProduct from "./components/OneproductCard";
 import BreadCrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from './components/footer';
+import Grid from './components/grid'
+import Instagram from './components/Instagram';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Home />
           <Navigation Nav="Navigation" />
           <Cards />
+          <Grid/>
+          <Instagram/>
           
             </Route>
             

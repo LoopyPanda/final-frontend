@@ -16,8 +16,10 @@ body{
    
 
 .firstpic{
-    width:32rem;
-    height:30rem;
+    max-width:30rem;
+    max-height:35rem;
+   
+    
    
     
 
@@ -37,8 +39,9 @@ body{
 .addtocart{
     
     width: 11rem;
-    height:7rem;
+    height:2rem;
     padding-right: 4rem;
+    padding-top: 1rem;
     
    
 }
@@ -47,8 +50,12 @@ body{
 
 
 .share-container{
-    height:15rem;
+    height:11rem;
     width: 22rem;
+    
+    padding-top: 4rem;
+   
+   
     
 }
 
@@ -72,21 +79,7 @@ body{
     
     
 } 
-/* li{
-    list-style-type: none;
-   
-}
-li:before{
-    content: "\27A4";
-}  */
 
-/* .pricecontainer{
-    
-    width: 14rem;
-    
-
-
-} */
 .share{
     color: #FAA21A;
 }
@@ -98,18 +91,15 @@ img {
 
 .pictures{
     width: 12rem;
-    height:12rem;
+    height:14rem;
+    object-fit: cover;
 }
-.productinfo{
-    border:1px solid #ccc;
-    width:25rem;
-    
-    width: -moz-fit-content;
-    width:fit-content;
-}
+
 .firstdescription{
-    
-   width:30rem;
+    text-align: left;
+  
+   
+   
 }
 
 
@@ -127,5 +117,31 @@ img {
 .nameandprice{
     height: 3rem;
     width: 6rem;
+    
 }
 
+.nameofproduct{
+    width:5rem;
+}
+.details-box{
+    padding-top: 3rem;
+    
+    
+}
+.oneproduct{
+    
+    
+    
+    padding-left: 2rem;
+    display: flex;
+    gap: 30px;
+
+    
+}
+.quantity{
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+h2{
+    padding-left: 19rem;
+}

@@ -14,18 +14,18 @@ const Navigation = () => {
     // Make sure the navbar is responsive on tablets/mobile
     // Make sure the nav.items are spread out evenly across the nav
     <Navbar className="Nav"> 
-      <Container className="d-flex justify-content-center">
+      <Container className=" navitems d-flex justify-content-center">
         <Nav fill>
-          <Nav.Item>
-            <Nav.Link href="http://localhost:3000/home">Home</Nav.Link>
+          <Nav.Item className='navstyle'>
+            <Nav.Link  href="http://localhost:3000/home">Home</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="http://localhost:3000/product/1">Products</Nav.Link>
+          <Nav.Item className='navstyle'>
+            <Nav.Link    href="http://localhost:3000/product/1">Products</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='navstyle'>
             <Nav.Link href="#About us">About Us</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
+          </Nav.Item >
+          <Nav.Item className='navstyle' >
             <Navbar.Brand href="#home">
               <img
                 alt="Ab store logo"
@@ -34,13 +34,13 @@ const Navigation = () => {
               />
             </Navbar.Brand>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#Contact us">Contact</Nav.Link>
+          <Nav.Item className='navstyle'>
+            <Nav.Link href="#">Contact</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='navstyle'>
             <Nav.Link href="#Login/Register">Login/Register</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='navstyle'>
             <Nav.Link href="#Cart">Cart</Nav.Link>
           </Nav.Item>
         </Nav>

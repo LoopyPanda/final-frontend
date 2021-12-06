@@ -11,7 +11,7 @@ const Home = () => {
     return (
       <div>
          <img
-      className="d-block w-100"
+      className="d-block w-100 hero"
       src={heroimage}
       alt="Name of Painting"
     />
