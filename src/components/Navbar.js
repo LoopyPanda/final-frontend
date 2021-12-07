@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Nav from "react-bootstrap/Nav";
 import logo from "../assets/pictures/logo.png"
+import { Link } from "react-router-dom"
 import "./Navbar.css";
 
 
@@ -19,7 +20,7 @@ const Navigation = () => {
       <Container className=" navitems d-flex justify-content-center">
         <Nav fill>
           <Nav.Item className='navstyle'>
-            <Nav.Link href="http://localhost:3000/home">Home</Nav.Link>
+            <Link to="/home">Home</Link>
           </Nav.Item>
           <Nav.Item className='navstyle'>
             <Navbar variant="light" bg="none" expand="lg">
@@ -31,9 +32,9 @@ const Navigation = () => {
                       id="nav-dropdown-dark-example"
                       title="Products"
                       menuVariant="light">
-                      <NavDropdown.Item href="http://localhost:3000/products/1">Artprints</NavDropdown.Item>
-                      <NavDropdown.Item href="http://localhost:3000/products/2">Postcards</NavDropdown.Item>
-                      <NavDropdown.Item href="http://localhost:3000/products/3">Calender-2022</NavDropdown.Item>
+                      <NavDropdown.Item><Link to="/products/1">Artprints</Link></NavDropdown.Item>
+                      <NavDropdown.Item><Link to="/products/2">Calendars 2022</Link></NavDropdown.Item>
+                      <NavDropdown.Item><Link to="/products/3">Postcards</Link></NavDropdown.Item>
                     </NavDropdown>
                   </Nav>
                 </Navbar.Collapse>

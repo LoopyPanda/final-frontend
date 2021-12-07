@@ -11,6 +11,7 @@ import "./Oneproductcard.css";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Navigation from "./Navbar";
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const OneProduct = (props) => {
 
@@ -18,93 +19,90 @@ const OneProduct = (props) => {
   const [data, setData] = useState()
 
   const { id } = useParams()
-  console.log(id);
+
+  const { REACT_APP_BACKEND_URL } = process.env
+
   useEffect(() => {
 
     setIsLoading(true)
-    axios.get(`https://fathomless-depths-64916.herokuapp.com/product/${id}`)
+    axios.get(`${REACT_APP_BACKEND_URL}/product/${id}`)
       .then((response) => {
-        console.log(response);
         setData(response.data)
       })
-      .catch(function (error) {
+      .catch((error) => {
         console.log(error);
       })
   }, [id]);
-  console.log(data);
+
+  if (!data) return <h1>Loading...</h1>
 
   return (
 
     <div className="container-lg m-5 bigcontainer">
       <div class="container-md my-5">
-      <h2 className="justify-items-center">
-        Choose the type of wall Art suitable for your home according to your
-        decor
-      </h2>
+        <h2 className="justify-items-center">
+          Choose the type of wall Art suitable for your home according to your
+          decor
+        </h2>
 
-      <Breadcrumb>
-        <Breadcrumb.Item href="http://localhost:3000/home">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-          Artprints
-        </Breadcrumb.Item>
-        <Breadcrumb.Item href="http://localhost:3000/product/1">Dessert</Breadcrumb.Item>
-      </Breadcrumb>
-      <div class="oneproduct ">
-      <div class="row">
-        <div className="col-6 " >
+        <Breadcrumb>
+          <Breadcrumb.Item><Link to={"/home"}>Home</Link></Breadcrumb.Item>
+          <Breadcrumb.Item><Link to={`/products/${id}`}>{data.name}</Link></Breadcrumb.Item>
+        </Breadcrumb>
+        <div class="oneproduct">
+          <div class="row">
+            <div className="col-6" >
 
-        <div className='firstpic '>
-          <div className="One_product_image">
-            {/* remember to check class */}
-
-            {data && <img src={`${data.pictures[0].url}`} />
-            }
-          </div>
-          </div>
-        </div>
-        </div>
-        <div className="col-6 ">
-
-          <div className="text-light text-dark pricecontainer ">
-            <div >
-              <p className='item ml-5'>{data &&
-                < p className='nameandprice' > {data.name}</p>
-              }</p>
-              <p className='cursive nameandprice'>277,00€</p>
-              <div className='btnanquantity'>
-                <label for="quantity">
-                  Quantity
-                  <input type='number'></input> <br />
-                </label>{" "}
-                <div className='addtocart'>
-
-                  <Button className='button' >Add to Cart</Button>
+              <div className='firstpic'>
+                <div className="One_product_image">
+                  {data && <img src={`${REACT_APP_BACKEND_URL}${data.pictures[0].url}`} />
+                  }
                 </div>
               </div>
             </div>
           </div>
+          <div className="col-6 ">
 
-          <br />
-          <div className='productinfo '>
+            <div className="text-light text-dark pricecontainer ">
+              <div >
+                <p className='item ml-5'>{data &&
+                  < p className='nameandprice' > {data.name}</p>
+                }</p>
+                <p className='cursive nameandprice'>277,00€</p>
+                <div className='btnanquantity'>
+                  <label for="quantity">
+                    Quantity
+                    <input type='number'></input> <br />
+                  </label>{" "}
+                  <div className='addtocart'>
 
-            {data &&
-              <p className='firstdescription'> {data.description}</p>
-            }
+                    <Button className='button' >Add to Cart</Button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <br />
+            <div className='productinfo '>
+
+              {data &&
+                <p className='firstdescription'> {data.description}</p>
+              }
+
+            </div>
           </div>
-        </div> 
         </div>
         <div className="container-md m-2">
-        
+
           <div className="row ">
             <div className="col-md-2">
               <div className="box p-1 ">
-                {data && <img className='pictures' src={`https://fathomless-depths-64916.herokuapp.com/${data.pictures[1].url}`} />
+                {data && <img className='pictures' src={`${REACT_APP_BACKEND_URL}${data?.pictures[1]?.url}`} />
                 }</div>
             </div>
             <div className="col-md-3">
               <div className="box p-1">
-                {data && <img className='pictures' src={`https://fathomless-depths-64916.herokuapp.com/${data.pictures[2]?.url}`} />
+                {data?.pictures[2] && <img className='pictures' src={`${REACT_APP_BACKEND_URL}${data?.pictures[2]?.url}`} />
                 }</div>
             </div>
 
@@ -113,15 +111,11 @@ const OneProduct = (props) => {
                 <br /><a href="#" className='cursive'><FaFacebook className='icons pb-1 pt-1 dark' />facebook</a>
                 <a href="#" className='cursive'><FaInstagram className='icons pb-1 pt-1' />Instagram</a> </div>
             </div>
-
-
           </div>
-          </div>
-
-       
+        </div>
       </div>
     </div>
-    
+
 
   );
 };
