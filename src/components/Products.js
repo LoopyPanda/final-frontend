@@ -31,12 +31,12 @@ const Products = (props) => {
             })
     }, [id]);
     console.log(data);
-    
+
     return (
 
         <div className="container-lg m-5 bigcontainer">
-            <h2 className="justify-items-left">
-                Your Cart
+            <h2 className="justify-items-center">
+                Choose the type of wall  Art suitable for your home according to your decor. 
             </h2>
             <div class="row">
                 <div className="col">
