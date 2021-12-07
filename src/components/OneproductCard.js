@@ -51,6 +51,7 @@ const OneProduct = (props) => {
       </Breadcrumb>
       <div class="oneproduct ">
       <div class="row">
+        <div className="col-6 " >
 
         <div className='firstpic '>
           <div className="One_product_image">
@@ -61,7 +62,8 @@ const OneProduct = (props) => {
           </div>
           </div>
         </div>
-        <div className="col ">
+        </div>
+        <div className="col-6 ">
 
           <div className="text-light text-dark pricecontainer ">
             <div >
@@ -90,9 +92,11 @@ const OneProduct = (props) => {
             }
 
           </div>
+        </div> 
         </div>
-        <div className="row pt-3  ">
-          <div className="row justify-content-start pt-1">
+        <div className="container-md m-2">
+        
+          <div className="row ">
             <div className="col-md-2">
               <div className="box p-1 ">
                 {data && <img className='pictures' src={`https://fathomless-depths-64916.herokuapp.com/${data.pictures[1].url}`} />
@@ -112,11 +116,12 @@ const OneProduct = (props) => {
 
 
           </div>
+          </div>
 
-        </div>
+       
       </div>
     </div>
-    </div>
+    
 
   );
 };
