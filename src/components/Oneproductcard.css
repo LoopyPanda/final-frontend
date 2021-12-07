@@ -1,147 +1,102 @@
-
-body{
-    font-family: 'Times New Roman', Times, serif;
-    padding: 0;
-    margin: 0;
+body {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
 }
-.bigcontainer{
-    border: white;
-}
-
-.heading{
-    text-align: center;
-    
+.bigcontainer {
+  border: white;
 }
 
-   
-
-.firstpic{
-    max-width:30rem;
-    max-height:35rem;
-   
-    
-   
-    
-
-    
-}
-.secondpic{
-    width:11rem;
-    height:11rem;
-
-}
-.box{
-    height:18rem;
-    width: 18rem;
-   
-    
-}
-.addtocart{
-    
-    width: 11rem;
-    height:2rem;
-    padding-right: 4rem;
-    padding-top: 1rem;
-    
-   
+.heading {
+  text-align: center;
 }
 
-
-
-
-.share-container{
-    height:11rem;
-    width: 22rem;
-    
-    padding-top: 4rem;
-   
-   
-    
+.firstpic {
+  max-width: 30rem;
+  max-height: 35rem;
+}
+.secondpic {
+  width: 11rem;
+  height: 11rem;
+}
+.box {
+  height: 18rem;
+  width: 18rem;
+}
+.addtocart {
+  width: 11rem;
+  height: 2rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
 }
 
-.button{
-    background-color: black;
-    color:#FAA21A;
-    text-align: center;
-    height: 3rem;
-    margin-top: 1rem;
-    font-family: 'Times New Roman', Times, serif;
+.share-container {
+  height: 11rem;
+  width: 22rem;
+
+  padding-top: 4rem;
 }
-.item{
-    color: #FAA21A;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 2rem;
-    padding-bottom: 2rem;
-    
-   
 
-    
-    
-} 
+.button {
+  background-color: black;
+  color: #faa21a;
+  text-align: center;
+  height: 3rem;
+  margin-top: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.item {
+  color: #faa21a;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
 
-.share{
-    color: #FAA21A;
+.share {
+  color: #faa21a;
 }
 
 img {
-    width: 26rem;
-    height:31rem;
+  width: 26rem;
+  height: 31rem;
 }
 
-.pictures{
-    width: 12rem;
-    height:14rem;
-    object-fit: cover;
+.pictures {
+  width: 12rem;
+  height: 14rem;
+  object-fit: cover;
 }
 
-.firstdescription{
-    text-align: left;
-  
-   
-   
+.firstdescription {
+  text-align: left;
 }
 
-
-
-    
-
-.pricecontainer{
-    
-    width: 15rem;
-    height:18rem;
+.pricecontainer {
+  width: 15rem;
+  height: 18rem;
 }
 
-
-
-.nameandprice{
-    height: 3rem;
-    width: 6rem;
-    
+.nameandprice {
+  height: 3rem;
+  width: 6rem;
 }
 
-.nameofproduct{
-    width:5rem;
+.nameofproduct {
+  width: 5rem;
 }
-.details-box{
-    padding-top: 3rem;
-    
-    
+.details-box {
+  padding-top: 3rem;
 }
-.oneproduct{
-    
-    
-    
-    padding-left: 2rem;
-    display: flex;
-    gap: 30px;
-
-    
+.oneproduct {
+  padding-left: 2rem;
+  display: flex;
+  gap: 30px;
 }
-.quantity{
-    padding-bottom: 0rem;
-    padding-top: 0rem;
+.quantity {
+  padding-bottom: 0rem;
+  padding-top: 0rem;
 }
-h2{
-    padding-left: 19rem;
+h2 {
+  padding-left: 19rem;
 }
