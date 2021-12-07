@@ -29,18 +29,13 @@ const Footer = () => {
               <h5>Follow my adventures elsewhere here:</h5>
               <ul className="no-bullets">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/abish4xart">
                     <FaFacebook className="icons pb-1 pt-1" />
                   </a>{" "}
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/ab_4xart/">
                     <FaInstagram className="icons pb-1 pt-1" />
-                  </a>{" "}
-                </li>
-                <li>
-                  <a href="#">
-                    <FaTwitter className="icons pb-1 pt-1" />
                   </a>{" "}
                 </li>
               </ul>

@@ -11,69 +11,41 @@ import Col from "react-bootstrap/Col";
 import './grid.css';
 
 
-
-
-
 const Instagram = () => {
-    return (<div class="container lg my-5">
-        <div>
-         <h2 className='cursive'>Are you on Instagram ? Follow me @ab_4xart</h2>
-  
-
-
-      </div>
-    <div class="row">
+  return (
+  <div class="container lg my-5">
+    <div>
+      <h2 className='cursive'>Are you on Instagram ? Follow me <a href="https://www.instagram.com/ab_4xart/">@ab_4xart</a></h2>
+    </div>
+    {/* <div class="row">
       <div class="col">
         <div className="p-5 border border-secondary">
-        pic1
-          
+          pic1
         </div>
         <p>name</p>
-       
-        
       </div>
       <div class="col">
         <div className="p-5 border border-secondary">
-        pic2
-          
+          pic2
         </div>
         <p>name</p>
-       
-        
       </div>
       <div class="col">
         <div className="p-5 border border-secondary">
-        pic3
-          
+          pic3
         </div>
         <p>name</p>
-       
-        
       </div>
       <div class="col">
         <div className="p-5 border border-secondary">
-        pic4
-          
+          pic4
         </div>
         <p>name</p>
-       
-        
       </div>
-      
-     
-      </div>
-     
-  
+    </div> */}
   </div>
-      
-      
+  );
+}
 
-
-
-
-     
-    );
-  }
-  
 
 export default Instagram;

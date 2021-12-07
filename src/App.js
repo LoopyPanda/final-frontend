@@ -25,23 +25,18 @@ function App() {
           <Switch>
             <Route exact path='/home'>
               <Home />
-              
               <Cards />
               <Grid/>
               <Instagram/>
             </Route>
             <Route exact path='/products/:id'>
-              
               <Product />
             </Route>
             <Route exact path='/product/:id'>
-              
               <OneProduct />
             </Route>
             <Route exact path='/Cart/'>
               <Cart/>
-              
-             
             </Route>
           </Switch>
         </div>
