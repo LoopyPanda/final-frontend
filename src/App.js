@@ -12,26 +12,36 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from './components/footer';
 import Grid from './components/grid'
 import Instagram from './components/Instagram';
+import Cart from './components/Cart';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
+      <Navigation Nav="Navigation" />
+        
         <div className="All-pages">
           <Switch>
             <Route exact path='/home'>
               <Home />
-              <Navigation Nav="Navigation" />
+              
               <Cards />
+              <Grid/>
+              <Instagram/>
             </Route>
             <Route exact path='/products/:id'>
-              <Navigation Nav="Navigation" />
+              
               <Product />
             </Route>
             <Route exact path='/product/:id'>
-              <Navigation Nav="Navigation" />
+              
               <OneProduct />
+            </Route>
+            <Route exact path='/Cart/'>
+              <Cart/>
+              
+             
             </Route>
           </Switch>
         </div>
