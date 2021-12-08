@@ -1,20 +1,20 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+// import Card from "react-bootstrap/Card";
+// import Container from "react-bootstrap/Container";
+// import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
+// import Nav from "react-bootstrap/Nav";
 import "./Oneproductcard.css";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Navigation from "./Navbar";
+// import Navigation from "./Navbar";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const OneProduct = (props) => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [setIsLoading] = useState(false);
   const [data, setData] = useState();
 
   const { id } = useParams();
@@ -31,13 +31,13 @@ const OneProduct = (props) => {
       .catch((error) => {
         console.log(error);
       });
-  }, [id]);
+  }, [id, REACT_APP_BACKEND_URL, setIsLoading]);
 
   if (!data) return <h1>Loading...</h1>;
 
   return (
     <div className="container-lg m-5 bigcontainer">
-      <div class="container-md my-5">
+      <div className="container-md my-5">
         <h2 className="justify-items-center">
           Choose the type of wall Art suitable for your home according to your
           decor
@@ -51,13 +51,13 @@ const OneProduct = (props) => {
             <Link to={`/products/${id}`}>{data.name}</Link>
           </Breadcrumb.Item>
         </Breadcrumb>
-        <div class="oneproduct">
-          <div class="row">
+        <div className="oneproduct">
+          <div className="row">
             <div className="col-6">
               <div className="firstpic">
                 <div className="One_product_image">
                   {data && (
-                    <img
+                    <img alt="product"
                       src={`${REACT_APP_BACKEND_URL}${data.pictures[0].url}`}
                     />
                   )}
@@ -97,6 +97,7 @@ const OneProduct = (props) => {
               <div className="box p-1 ">
                 {data && (
                   <img
+                    alt="logo"
                     className="pictures"
                     src={`${REACT_APP_BACKEND_URL}${data?.pictures[1]?.url}`}
                   />
@@ -107,6 +108,7 @@ const OneProduct = (props) => {
               <div className="box p-1">
                 {data?.pictures[2] && (
                   <img
+                    alt="firstproduct"
                     className="pictures"
                     src={`${REACT_APP_BACKEND_URL}${data?.pictures[2]?.url}`}
                   />
@@ -118,11 +120,11 @@ const OneProduct = (props) => {
               <div className="pt-5 mt-5 me-5 pe-5 share">
                 Share with your loved ones
                 <br />
-                <a href="#" className="cursive">
+                <a href="https://www.facebook.com/abish4xart" className="cursive">
                   <FaFacebook className="icons pb-1 pt-1 dark" />
                   facebook
                 </a>
-                <a href="#" className="cursive">
+                <a href="https://www.instagram.com/ab_4xart/" className="cursive">
                   <FaInstagram className="icons pb-1 pt-1" />
                   Instagram
                 </a>{" "}

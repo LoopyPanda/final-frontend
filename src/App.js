@@ -9,6 +9,7 @@ import Product from "./components/Products";
 import OneProduct from "./components/OneproductCard";
 // import BreadCrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { Redirect } from 'react-router-dom';
 import Footer from './components/footer';
 import Grid from './components/grid'
 import Instagram from './components/Instagram';
@@ -16,19 +17,32 @@ import Cart from './components/Cart';
 
 
 function App() {
+
+
   return (
     <Router>
       <div className="App">
-        
-        
+
+
         <div className="All-pages">
           <Switch>
-            <Route exact path='/home'>
+
+
+            <Route exact path='/'>
               <Home />
               <Navigation Nav="Navigation" />
               <Cards />
-              <Grid/>
-              <Instagram/>
+              <Grid />
+              <Instagram />
+            </Route>
+            <Route exact path='/home'>
+
+              <Home />
+
+              <Navigation Nav="Navigation" />
+              <Cards />
+              <Grid />
+              <Instagram />
             </Route>
             <Route exact path='/products/:id'>
               <Navigation Nav="Navigation" />
@@ -40,7 +54,7 @@ function App() {
             </Route>
             <Route exact path='/Cart/'>
               <Navigation Nav="Navigation" />
-              <Cart/>
+              <Cart />
             </Route>
           </Switch>
         </div>
