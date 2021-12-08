@@ -3,6 +3,24 @@ body{
     padding:0%;
 }
 
+.cart-heading{
+    width: 120rem;
+    
+    border:solid black;
+    
+}
+
+ul{
+    padding:0px;
+}
+
+li{
+   display:inline-block;
+   width: auto;
+   list-style: outside none none;
+   text-align: end;
+}
+
 /* .button1{
     align-items: left;
     margin-left:10px;
@@ -16,3 +34,4 @@ body{
     align-items: right;
     margin-right:10px;
 } */
+

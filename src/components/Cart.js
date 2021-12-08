@@ -10,14 +10,15 @@ const Cart = () => {
         decor
       </h2>
           <h4>Your Cart</h4>
-          <div className='cart-heading'>
-          <p>Price</p> 
-          <p>Quantity</p>
-          <p>Total</p>
+          <div className='details'>
+         <ul>
+          <li>Price</li> 
+          <li>Quantity</li>
+          <li>Total</li>
+          </ul>
           </div>
-         
-        
-
+          <div className='cart-heading'></div>
+          <h5>hello</h5>
       </div>
     );
   }

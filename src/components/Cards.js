@@ -12,16 +12,14 @@ const Cards = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [categories, setCategories] = useState();
 
-  const { REACT_APP_BACKEND_URL } = process.env
+  const { REACT_APP_BACKEND_URL } = process.env;
 
-  const { id } = useParams()
+  const { id } = useParams();
 
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(
-        `${REACT_APP_BACKEND_URL}/product/category-pictures`
-      )
+      .get(`${REACT_APP_BACKEND_URL}/product/category-pictures`)
       .then((response) => {
         setCategories(response.data);
       })
@@ -34,25 +32,27 @@ const Cards = () => {
 
   return (
     <div className="cards">
-      {/* <div class="container lg my-5"> */}
-      <div class="row pt-5">
-        {categories.map((category, index) => {
-          return (
-            <CategoryCard
-              key={index}
-              thumbnail={category.thumbnail}
-              name={category.name}
-            />
-          );
-        
-        })}
-      
+      <div class="container lg my-5">
+        <div class="row">
+          {categories.map((category, index) => {
+            return (
+              <CategoryCard
+                key={index}
+                thumbnail={category.thumbnail}
+                name={category.name}
+              />
+            );
+          })}
+        </div>
+
+        <button className="main-button" type="button">
+          Start Shopping
+        </button>
+
+        <h3>Everyday can be more magical</h3>
+        <p className="cursive">Painting and tools to inspire wonder.</p>
       </div>
-      {/* <Button href="#" type="submit">Button</Button>{' '} */}
-      <h2 className="justify-items-center">Everyday can be more magical</h2>
-      <p className="cursive">Painting and tools to inspire wonder.</p>
     </div>
-    // </div>
   );
 };
 
