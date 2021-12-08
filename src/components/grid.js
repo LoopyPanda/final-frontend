@@ -1,8 +1,10 @@
 import React from "react";
+
 // import Card from "react-bootstrap/Card";
 // import CardGroup from "react-bootstrap/CardGroup";
 // import Button from "react-bootstrap/Button";
 // import Container from "react-bootstrap/Container";
+
 import "./cards.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -36,19 +38,28 @@ const Grid = () => {
       <div class="container lg my-5">
         {/* row 1 */}
         <div class="row">
-        {/* col 1 of 1 */}
-          <div class="col-6 sm={8}>sm=8">
-            <div className="p-5">
+          {/* col 1 of 1 */}
+          <div class="col-6">
+            <div className="p-5 ">
               <Link to={`/product/${randomPictures[0].id}`}>
-                <img className='random-picturesone' src={`${REACT_APP_BACKEND_URL}${randomPictures[0].url} `} alt="product" />
+                <img
+                  className="random-picturesone"
+                  src={`${REACT_APP_BACKEND_URL}${randomPictures[0].url} `}
+                  alt="product"
+                />
               </Link>
             </div>
           </div>
           {/* col 1 of 2 */}
-          <div class="col-5 sm={4}>sm=4">
-            <div className="p-5">
+          <div class="col-5">
+            <div className="p-5 ">
+              {" "}
               <Link to={`/product/${randomPictures[1].id}`}>
-                <img className='random-picturestwo' src={`${REACT_APP_BACKEND_URL}${randomPictures[1].url} `} alt="product" />
+                <img
+                  className="random-picturestwo"
+                  src={`${REACT_APP_BACKEND_URL}${randomPictures[1].url} `}
+                  alt="product"
+                />
               </Link>
             </div>
           </div>
@@ -56,28 +67,35 @@ const Grid = () => {
 
         {/* container 2 */}
         <div class="container lg my-5">
-        {/* row 2 */}
+          {/* row 2 */}
           <div class="row">
-          {/* col 2 of 1 */}
-            <div class="col-8 sm=true">
+            {/* col 2 of 1 */}
+            <div class="col-8">
               <div className="p-5 ">
+                {" "}
                 <Link to={`/product/${randomPictures[2].id}`}>
-                  <img className='random-picturesthree' src={`${REACT_APP_BACKEND_URL}${randomPictures[2].url} `} alt="product" />
+                  <img
+                    className="random-picturesthree"
+                    src={`${REACT_APP_BACKEND_URL}${randomPictures[2].url} `}
+                    alt="product"
+                  />
                 </Link>
               </div>
             </div>
             {/* col 2 of 2 */}
-            <div class="col-4 sm=true">
+            <div class="col-4">
               <div className="p-5 ">
+                {" "}
                 <Link to={`/product/${randomPictures[3].id}`}>
-                  <img className='random-picturesfour' src={`${REACT_APP_BACKEND_URL}${randomPictures[0].url} `} alt="product" />
+                  <img
+                    className="random-picturesfour"
+                    src={`${REACT_APP_BACKEND_URL}${randomPictures[0].url} `}
+                    alt="product"
+                  />
                 </Link>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <img className="picture" src={quote_image} alt="bottom-hero-image" />
         </div>
       </div>
     </div>
