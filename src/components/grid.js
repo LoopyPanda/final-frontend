@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -35,14 +34,14 @@ const Grid = () => {
       <div class="container lg my-5">
         <div class="row">
           <div class="col-6">
-            <div className="p-5 border border-secondary">
+            <div className="p-5 ">
               <Link to={`/product/${randomPictures[0].id}`}>
                 <img className='random-picturesone' src={`${REACT_APP_BACKEND_URL}${randomPictures[0].url} `} alt="product" />
                 </Link>
                 </div>
           </div>
           <div class="col-5">
-            <div className="p-5 border border-secondary">              <Link to={`/product/${randomPictures[1].id}`}>
+            <div className="p-5 ">              <Link to={`/product/${randomPictures[1].id}`}>
                 <img className='random-picturestwo' src={`${REACT_APP_BACKEND_URL}${randomPictures[1].url} `} alt="product" />
                 </Link></div>
           </div>
@@ -50,12 +49,12 @@ const Grid = () => {
         <div class="container lg my-5">
           <div class="row">
             <div class="col-8">
-              <div className="p-5 border border-secondary">              <Link to={`/product/${randomPictures[2].id}`}>
+              <div className="p-5 ">              <Link to={`/product/${randomPictures[2].id}`}>
                 <img className='random-picturesthree' src={`${REACT_APP_BACKEND_URL}${randomPictures[2].url} `} alt="product" />
                 </Link></div>
             </div>
             <div class="col-4">
-              <div className="p-5 border border-secondary">              <Link to={`/product/${randomPictures[3].id}`}>
+              <div className="p-5 ">              <Link to={`/product/${randomPictures[3].id}`}>
                 <img className='random-picturesfour' src={`${REACT_APP_BACKEND_URL}${randomPictures[0].url} `} alt="product" />
                 </Link></div>
             </div>

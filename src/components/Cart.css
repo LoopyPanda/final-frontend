@@ -3,5 +3,17 @@ body{
     padding:0%;
 }
 .cart-heading{
+    width: 120rem;
     
+    border:solid black;
+    
+}
+ul{
+    padding:0px;
+}
+li{
+   display:inline-block;
+   width: auto;
+   list-style: outside none none;
+   text-align: end;
 }

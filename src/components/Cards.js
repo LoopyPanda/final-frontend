@@ -40,12 +40,17 @@ const Cards = () => {
                 name={category.name}
                 
               />
+               
               
             );
           })}
+          
         </div>
         
-        <h2 className="justify-items-center">Everyday can be more magical</h2>
+          
+        <button className='main-button'type="button">Start Shopping</button>
+        
+        <h3 >Everyday can be more magical</h3>
         <p className="cursive">Painting and tools to inspire wonder.</p>
       </div>
     </div>

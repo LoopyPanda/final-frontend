@@ -94,10 +94,10 @@ const OneProduct = (props) => {
           </div>
         </div> 
         </div>
-        <div className="container-md m-2">
+        <div className="container-md">
         
           <div className="row ">
-            <div className="col-md-2">
+            <div className="col-md-2 ps-1">
               <div className="box p-1 ">
                 {data && <img className='pictures' src={`https://fathomless-depths-64916.herokuapp.com/${data.pictures[1].url}`} />
                 }</div>

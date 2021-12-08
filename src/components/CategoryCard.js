@@ -9,9 +9,11 @@ const CategoryCard = ({ thumbnail, name }) => {
               className="card-pictures"
               src={`${REACT_APP_BACKEND_URL}${thumbnail}`}
             />
+             <h5>{name}</h5>
+           
         </div>
-        <h5> {name}</h5>
-        <button type="button">Start Shopping</button>
+        
+       
         
         
         

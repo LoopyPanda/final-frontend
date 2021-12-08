@@ -22,12 +22,13 @@ const Navigation = () => {
             <Nav.Link href="http://localhost:3000/home">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item className='navstyle'>
-            <Navbar variant="light" bg="none" expand="lg">
+            
               <Container fluid>
                 <Navbar.Toggle aria-controls="navbar-dark-example" />
                 <Navbar.Collapse id="navbar-dark-example">
                   <Nav>
-                    <NavDropdown
+                    
+                    <NavDropdown className='dropdown'
                       id="nav-dropdown-dark-example"
                       title="Products"
                       menuVariant="light">
@@ -38,7 +39,7 @@ const Navigation = () => {
                   </Nav>
                 </Navbar.Collapse>
               </Container>
-            </Navbar>
+           
           </Nav.Item>
           <Nav.Item className='navstyle'>
             <Nav.Link href="#About us">About Us</Nav.Link>
@@ -64,6 +65,7 @@ const Navigation = () => {
         </Nav>
       </Container>
     </Navbar>
+  
   );
 };
 

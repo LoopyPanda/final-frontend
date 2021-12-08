@@ -23,21 +23,21 @@ const Footer = () => {
                 storyteller
               </p>
 
-              <Button className="button">Contact us</Button>
+              <a href="mailto:abhilashakatkiya@gmail.com"><Button className="button">Contact us</Button></a>
             </div>
-            <div className="col-md-4 col-sm-6">
-              <h5>Follow my adventures elsewhere here:</h5>
+            <div className="col-md-3 col-sm-6">
+              <h5>Follow my adventures here:</h5>
               <ul className="no-bullets">
                 <li>
                   <a href="#">
                     <FaFacebook className="icons pb-1 pt-1" />
                   </a>{" "}
-                </li>
+                </li> <br/>
                 <li>
                   <a href="#">
                     <FaInstagram className="icons pb-1 pt-1" />
                   </a>{" "}
-                </li>
+                </li><br/>
                 <li>
                   <a href="#">
                     <FaTwitter className="icons pb-1 pt-1" />
@@ -45,7 +45,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-2 col-sm-6">
               <h5>Info</h5>
               <ul className="no-bullets">
                 <li>
