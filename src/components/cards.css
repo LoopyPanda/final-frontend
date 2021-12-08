@@ -4,7 +4,7 @@ body{
 }
 
 
-button{
+/* button{
     background-color: black;
     color:#FAA21A;
     text-align: center;
@@ -12,7 +12,7 @@ button{
     
     margin-top: 1rem;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 .cursive{
     font-family: sofia;
     
@@ -27,4 +27,4 @@ button{
 h3 {
     padding-top: 5rem;
     color:#FAA21A;
-  }
+}

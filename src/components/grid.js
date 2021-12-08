@@ -12,7 +12,7 @@ import { useState, useEffect } from "react";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
 import "./grid.css";
-import quote_image from "../assets/pictures/quote_image.jpg";
+// import quote_image from "../assets/pictures/quote_image.jpg";
 import { Link } from "react-router-dom";
 
 const Grid = () => {
@@ -28,18 +28,18 @@ const Grid = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [REACT_APP_BACKEND_URL]);
 
   if (!randomPictures) return null;
 
   return (
     <div>
       {/* container 1 */}
-      <div class="container lg my-5">
+      <div className="container lg my-5">
         {/* row 1 */}
-        <div class="row">
+        <div className="row">
           {/* col 1 of 1 */}
-          <div class="col-6">
+          <div className="col-6">
             <div className="p-5 ">
               <Link to={`/product/${randomPictures[0].id}`}>
                 <img
@@ -51,7 +51,7 @@ const Grid = () => {
             </div>
           </div>
           {/* col 1 of 2 */}
-          <div class="col-5">
+          <div className="col-5">
             <div className="p-5 ">
               {" "}
               <Link to={`/product/${randomPictures[1].id}`}>
@@ -64,13 +64,12 @@ const Grid = () => {
             </div>
           </div>
         </div>
-
         {/* container 2 */}
-        <div class="container lg my-5">
+        <div className="container lg my-5">
           {/* row 2 */}
-          <div class="row">
+          <div className="row">
             {/* col 2 of 1 */}
-            <div class="col-8">
+            <div className="col-8">
               <div className="p-5 ">
                 {" "}
                 <Link to={`/product/${randomPictures[2].id}`}>
@@ -83,7 +82,7 @@ const Grid = () => {
               </div>
             </div>
             {/* col 2 of 2 */}
-            <div class="col-4">
+            <div className="col-4">
               <div className="p-5 ">
                 {" "}
                 <Link to={`/product/${randomPictures[3].id}`}>
@@ -97,9 +96,6 @@ const Grid = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <img className="picture" src={quote_image} alt="bottom-hero-image" />
       </div>
     </div>
   );

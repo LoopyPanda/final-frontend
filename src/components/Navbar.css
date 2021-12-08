@@ -9,7 +9,13 @@
 }
 
 .navstyle {
-  padding-right: 6rem;
+  padding-right: 4rem;
+  
 }
-.dropdown {
+nav.link:visited {
+  color: black
+}
+.dropdown{
+  font-size:1.3rem;
+  color: black;
 }

@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 const Products = (props) => {
 
-    const [isLoading, setIsLoading] = useState(false)
+    // const [setIsLoading] = useState(false)
     const [categoryData, setCategoryData] = useState()
 
     const { REACT_APP_BACKEND_URL } = process.env
@@ -24,7 +24,7 @@ const Products = (props) => {
     const { id } = useParams()
 
     useEffect(() => {
-        setIsLoading(true)
+        //setIsLoading(true)
         axios.get(`${REACT_APP_BACKEND_URL}/product/picture-by-category/${id}`)
             .then((response) => {
                 setCategoryData(response.data[0])
@@ -32,7 +32,7 @@ const Products = (props) => {
             .catch((error) => {
                 console.log(error);
             })
-    }, [id]);
+    }, [id, REACT_APP_BACKEND_URL]);
 
     return (
         <div className="container-lg m-5 bigcontainer">
@@ -46,18 +46,25 @@ const Products = (props) => {
             </Breadcrumb>}
 
             {!categoryData ? (
-                <div class="row">
+                <div className="row">
                     <div className="col">
                         <h1>Loading...</h1>
                     </div>
                 </div>
             ) : (
-                <div class="row">
+                <div className="row">
 
                     {categoryData.urls.filter(item => {
                         return item.url.includes(categoryData.category_name)
                     }).map((item, index) => {
-                        return <div className="col"><div className='category_picture_container'><Link to={`/product/${item.product_id}`} key={index}><img className="pictures" src={`https://fathomless-depths-64916.herokuapp.com${item.url}`} /></Link><span className="priceofproduct">Price: {categoryData.category_price} €</span></div></div>
+                        return <div key={index} className="col">
+                            <div className='category_picture_container'>
+                                <Link to={`/product/${item.product_id}`} key={index}>
+                                    <img alt="product" className="pictures" src={`https://fathomless-depths-64916.herokuapp.com${item.url}`} />
+                                </Link>
+                                <span className="priceofproduct">Price: {categoryData.category_price} €</span>
+                            </div>
+                        </div>
                     })}
                 </div>
             )}
