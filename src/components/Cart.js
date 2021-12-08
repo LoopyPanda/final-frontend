@@ -12,8 +12,6 @@ const Cart = () => {
           <h4>Your Cart</h4>
           <div className='details'>
          <ul>
-           
-          
           <li>Price</li> 
           <li>Quantity</li>
           <li>Total</li>
@@ -21,9 +19,6 @@ const Cart = () => {
           </div>
           <div className='cart-heading'></div>
           <h5>hello</h5>
-         
-        
-
       </div>
     );
   }
