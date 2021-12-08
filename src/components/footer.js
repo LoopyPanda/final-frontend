@@ -23,26 +23,25 @@ const Footer = () => {
                 storyteller
               </p>
 
-              <a href="mailto:abhilashakatkiya@gmail.com"><Button className="button">Contact us</Button></a>
+              <a href="mailto:abhilashakatkiya@gmail.com">
+                <Button className="button">Contact us</Button>
+              </a>
             </div>
             <div className="col-md-3 col-sm-6">
               <h5>Follow my adventures here:</h5>
               <ul className="no-bullets">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/abish4xart">
                     <FaFacebook className="icons pb-1 pt-1" />
                   </a>{" "}
-                </li> <br/>
+                </li>{" "}
+                <br />
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/ab_4xart/">
                     <FaInstagram className="icons pb-1 pt-1" />
                   </a>{" "}
-                </li><br/>
-                <li>
-                  <a href="#">
-                    <FaTwitter className="icons pb-1 pt-1" />
-                  </a>{" "}
                 </li>
+                <br />
               </ul>
             </div>
             <div className="col-md-2 col-sm-6">

@@ -39,7 +39,6 @@ function App() {
               <OneProduct />
             </Route>
             <Route exact path='/Cart/'>
-              
               <Navigation Nav="Navigation" />
               <Cart/>
             </Route>

@@ -1,11 +1,11 @@
 .picture {
-   
    width:83rem;
-   height:10rem
+   height:10rem;
 }
 .random-picturesone{
    width: 35rem;
    object-fit: cover;
+   
 }
 .random-picturestwo{
    width: 28rem;
@@ -20,7 +20,3 @@
    object-fit: cover;
    
 }
-    
-   
-
-
