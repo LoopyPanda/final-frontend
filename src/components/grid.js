@@ -80,7 +80,7 @@ const Grid = () => {
           <img className="picture" src={quote_image} alt="bottom-hero-image" />
         </div>
       </div>
-    // </div>
+    </div>
   );
 };
 

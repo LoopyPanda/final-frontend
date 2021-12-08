@@ -45,7 +45,7 @@ const Navigation = () => {
             <Nav.Link href="#About us">About Us</Nav.Link>
           </Nav.Item >
           <Nav.Item className='navstyle' >
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/home">
               <img
                 alt="Ab store logo"
                 src={logo}
