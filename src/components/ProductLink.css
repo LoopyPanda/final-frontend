@@ -1,9 +1,11 @@
-.productLink-button{
-    background-color: black;
-    color:#FAA21A;
-    text-align: center;
-    width: 8rem;
-    height: 3rem;
-    margin-top: 1rem;
-    font-family: 'Times New Roman', Times, serif;
+.productLink-button {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: #faa21a;
+  text-align: center;
+  width: 8rem;
+  height: 3rem;
+  margin-top: 2rem;
+  font-family: "Times New Roman", Times, serif;
 }

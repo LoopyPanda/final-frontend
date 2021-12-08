@@ -33,16 +33,18 @@ const Cards = () => {
   return (
     <div className="cards">
       <div className="container lg my-5">
-        <div className="row">
+        <div className="row row-cols-6" >
           {categories && categories.map((category, index) => {
             return (
               <>
-                <ProductLink key={index + 1} id={category.category_id} />
                 <CategoryCard
                   key={index}
                   thumbnail={category.thumbnail}
                   name={category.name}
                 />
+                <div>
+                  <ProductLink key={index + 1} id={category.category_id} />
+                </div>
               </>
             );
           })}

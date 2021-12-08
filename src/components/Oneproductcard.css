@@ -22,7 +22,6 @@ body {
 .box {
   height: 19rem;
   width: 16rem;
-  
 }
 .addtocart {
   width: 11rem;
@@ -100,4 +99,8 @@ img {
 }
 h2 {
   padding-left: 19rem;
+}
+
+h1 {
+  color: #faa21a;
 }

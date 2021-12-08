@@ -22,7 +22,7 @@ const OneProduct = (props) => {
   const { REACT_APP_BACKEND_URL } = process.env;
 
   useEffect(() => {
-    setIsLoading(true);
+    // setIsLoading(true)
     axios
       .get(`${REACT_APP_BACKEND_URL}/product/${id}`)
       .then((response) => {
@@ -31,7 +31,7 @@ const OneProduct = (props) => {
       .catch((error) => {
         console.log(error);
       });
-  }, [id, REACT_APP_BACKEND_URL, setIsLoading]);
+  }, [id, REACT_APP_BACKEND_URL]);
 
   if (!data) return <h1>Loading...</h1>;
 

@@ -1,8 +1,7 @@
-body{
-    padding: 0%;
-    margin:0%;
+body {
+  padding: 0%;
+  margin: 0%;
 }
-
 
 /* button{
     background-color: black;
@@ -13,18 +12,16 @@ body{
     margin-top: 1rem;
     font-family: 'Times New Roman', Times, serif;
 } */
-.cursive{
-    font-family: sofia;
-    
+.cursive {
+  font-family: sofia;
 }
 
-.card-pictures{
-    width:25rem;
-    height: 15rem;
-    object-fit: cover;
-
+.card-pictures {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
 }
 h3 {
-    padding-top: 5rem;
-    color:#FAA21A;
+  padding-top: 5rem;
+  color: #faa21a;
 }
